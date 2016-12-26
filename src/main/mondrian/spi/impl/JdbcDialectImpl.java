@@ -1076,6 +1076,8 @@ public class JdbcDialectImpl implements Dialect {
             return DatabaseProduct.INGRES;
         } else if (productName.equals("Interbase")) {
             return DatabaseProduct.INTERBASE;
+        } else if (upperProductName.equals("KYLIN")) {
+            return DatabaseProduct.KYLIN;
         } else if (upperProductName.equals("LUCIDDB")
             || upperProductName.equals("OPTIQ"))
         {
